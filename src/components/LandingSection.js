@@ -16,7 +16,14 @@ const LandingSection = () => (
     backgroundColor="#2A4365"
   >
     <VStack spacing={16}>
-      <Avatar src="https://i.pravatar.cc/150?img=7" />
+      <Avatar src="https://i.pravatar.cc/150?img=7"
+        size='2xl'
+        name="Pete"
+      />
+      {/*Using Chakra UI here */}
+      <Heading as='h4' size='md' noOfLiners={1}>
+        {greeting}
+      </Heading>
     </VStack>
   </FullScreenSection>
 );
